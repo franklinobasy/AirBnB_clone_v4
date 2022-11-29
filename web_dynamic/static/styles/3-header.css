@@ -1,34 +1,24 @@
 header {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 70px;
     background: #FFFFFF;
+    height: 70px;
+    width: 100%;
     border-bottom: 1px solid #CCCCCC;
-    grid-area: header;
-    align-self: flex-start;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: 20px 50%;
 }
 
-header > a.logo {
-    display: inline-block;
-    margin-left: 20px;
-    margin-top: 5px;
-    height: 60px;
-    width: 142px;
-    background: url("../images/logo.png") no-repeat;
-    background-size: 142px 60px;
+#api_status.available{
+    background-color: #ff545f;
 }
 
-div#api_status {
-    position: absolute;
-    width: 40px;
+#api_status {
+    background-color: #cccccc;
     height: 40px;
-    top: calc((70px - 40px) / 2);
-    right: 30px;
+    width: 40px;
+    float: right;
     border-radius: 50%;
-    background: #CCCCCC;
-}
-
-div#api_status.available {
-    background: #FF545F;
+    margin-right: 30px;
+    transform: translateY(-50%);
+    top: 50%;
 }
